@@ -3,6 +3,7 @@ import { filteringText } from "./filtering-text";
 
 export async function captureIncomingMessage(message: string){
     message = filteringText(message)
+    
     if(message == ""){
         return
     }
