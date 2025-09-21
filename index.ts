@@ -19,6 +19,9 @@ client.on(Events.ClientReady, (clientReady) => {
 })
 
 client.on(Events.MessageCreate, async (message) => {
+    if(message.author.bot){
+        return
+    }
     await captureIncomingMessage(message.content)
 })
 
