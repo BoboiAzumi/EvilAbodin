@@ -5,7 +5,7 @@ import { autoLabelling } from "./core/auto-labelling"
 
 dontenv.config()
 
-autoLabelling()
+//autoLabelling()
 
 const client = new Client({intents: [
     GatewayIntentBits.Guilds, 
