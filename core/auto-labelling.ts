@@ -6,7 +6,6 @@ export async function autoLabelling(){
     const intervalMs = 86400000 / requestsPerDay;
     const limit = 40
 
-    console.log(`[${new Date().toLocaleTimeString()}] Auto Labelling Run`)
     let count = await prisma.textRecord.count({
         where: {
             label: ""
@@ -17,6 +16,8 @@ export async function autoLabelling(){
         setTimeout(autoLabelling, intervalMs)
         return
     }
+
+    console.log(`[${new Date().toLocaleTimeString()}] Auto Labelling Run`)
 
     const data = await prisma.textRecord.findMany({
         where: {
