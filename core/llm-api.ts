@@ -4,6 +4,7 @@ const prompt = `saya mau anda menandai kalimat kalimat berbahaya termasuk yang b
 - Konten yang secara eksplisit menyebut fetish aneh
 - Konten "halu", seperti merasa punya istri karakter fiksi, terutama nama jejepangan
 - Identifikasi juga nama, jika nama seseorang itu disandingkan dengan sesama jenis, seperti "Alex mencintai Albert" maka ini adalah konten LGBTQ, kamu harus tandai
+- Kata kata "mpreg", "hamil", "clank", "dedek" masuk ke label FETISH
 
 kamu cukup buat label seperti
 NORMAL, PEDOFILIA, SEXUAL_HARASSMENT, LGBTQ, TERORISM, FETISH, HALU, dan RACISM
