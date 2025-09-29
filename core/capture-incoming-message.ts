@@ -10,7 +10,8 @@ export async function captureIncomingMessage(message: string, label: string = ""
 
     return await prisma.textRecord.create({
         data: {
-            text: message
+            text: message,
+            label: label
         }
     })
 }
