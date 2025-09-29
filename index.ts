@@ -28,7 +28,7 @@ async function main(){
         //await captureIncomingMessage(message.content)
 
         const msg = filteringText(message.content)
-        if(msg != ""){
+        if(msg != "" && message.channel.id == "1206217214274048050"){
             const id = await Model.inference(message.content) as number
             if(label[id] != "NORMAL"){
                 message.reply(`Your message violates community standards guidelines. \nReason: ${label[id]}`)
