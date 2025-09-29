@@ -1,8 +1,11 @@
 {
   "dependencies": {
+    "@gradio/client": "^1.19.0",
+    "@huggingface/transformers": "^3.7.3",
     "@prisma/client": "^6.16.2",
     "discord.js": "^14.22.1",
     "dotenv": "^17.2.2",
+    "onnxruntime-web": "^1.22.0",
     "prisma": "^6.16.2",
     "tsx": "^4.20.5",
     "typescript": "^5.9.2"
