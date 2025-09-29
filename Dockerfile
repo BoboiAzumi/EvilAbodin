@@ -1,10 +1,10 @@
-FROM node:20-alpine
+FROM node:18-bullseye-slim
 
 WORKDIR /app
 
 COPY package*.json ./
 
-RUN apk add --no-cache libc6-compat
+RUN apt-get update && apt-get install -y libc6
 RUN npm install
 
 COPY . .
